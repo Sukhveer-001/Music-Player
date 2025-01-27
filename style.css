@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #d3d3d3;
+  overflow-x: hidden;
+  position: relative;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  font-family: "Roboto", serif;
+  height: 10vh;
+  background-color: #3498db;
+  color: white;
+}
+.brand img {
+  height: 47px;
+  width: 47px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  font-family: "Roboto", serif;
+  gap: 6px;
+}
+nav ul li {
+  padding: 0px 12px;
+}
+ul span {
+  font-size: 25px;
+  padding: 0px 5px;
+}
+.container {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 15vh;
+  margin-left: 3vw;
+  width: 100vw;
+  display: flex;
+  overflow-y: scroll;
+  height: calc(100vh - 10vh -15vh);
+  /* background-color: aqua; */
+}
+.songCard {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.41);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  width: 25vw;
+  height: 18vh;
+  margin: 16px;
+  overflow: hidden;
+  position: relative;
+}
+.songPlay {
+  z-index: 10;
+  position: relative;
+}
+
+.cover {
+  width: 8vw;
+  object-fit: cover;
+  /* object-position: 50% 80%; */
+  /* object-position: top; */
+}
+.title {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.artist-name {
+  text-transform: capitalize;
+ 
+}
+.playBar {
+  padding-right: 12rem;
+}
+.playBar i{
+  cursor: pointer;
+  
+}
+.bottom {
+  background-color: #3498db;
+  height: 15vh;
+  position: fixed;
+  bottom: 0%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.progressBar {
+  width: 98vw;
+  cursor: pointer;
+   transition: width 0.1s linear;
+}
+
+.icons {
+  margin-top: 26px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #ccc;
+  border-radius: 6px;
+  height: 0.5rem;
+   
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  margin-top: -3.5px; 
+  background-color: #5cd5eb;
+  height: 1rem;
+  width: 1rem;
+}
